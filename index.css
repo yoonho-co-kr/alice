@@ -216,11 +216,14 @@ a.a_box {
 .sticky {
     position: sticky;
     top: 0;
+    max-width: 1600px;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin: 0 auto;
+    gap: 30px;
 }
 
 .sticky-background {
@@ -245,17 +248,38 @@ a.a_box {
 }
 
 .card {
-    width: 24%;
-    height: 100%;
+    width: 350px;
+    height: 490px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20vw;
+    font-size: 2vw;
     transform-style: preserve-3d;
     position: relative;
-    transform: perspective(100vw) translateX(100vw) rotateY(180deg);
     transition: transform 0.1s;
+    background-color: #3B3A38;
+    border-radius: 30px;
+    box-shadow: 6px 7px 26px -8px rgba(0, 0, 0, 0.75);
+}
+
+
+.card {
+    transform: perspective(100vw) translateY(77vh) rotateY(180deg);
+}
+
+.card:nth-child(2n) {
+    transform: perspective(100vw) translateY(-77vh) rotateY(180deg);
+}
+
+.card.front,
+.card.back {
+    width: 100%;
+    height: 100%;
+}
+
+.back>img {
+    width: 90%;
 }
 
 .front,
@@ -268,6 +292,39 @@ a.a_box {
     backface-visibility: hidden;
 }
 
+.top_symbol,
+.bot_symbol {
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+}
+
+.top_symbol {
+    top: 15px;
+    left: 15px;
+}
+
+.bot_symbol {
+    bottom: 15px;
+    right: 15px;
+    transform: translateY(180deg);
+}
+
+.top_symbol>img,
+.bot_symbol>img {
+    width: 100%;
+}
+
+.symbol_icon {
+    width: 70px;
+    height: 70px;
+}
+
+.symbol_icon>img {
+    width: 100%;
+}
+
+
 .front {
     background-color: #FFF;
     font-size: 0.5em;
@@ -275,13 +332,30 @@ a.a_box {
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.symbol_name {
+    font-weight: 900;
+}
+
+.symbol_name:nth-child(2n) {
+    font-weight: 500;
+}
+
+.symbol_desc {
+    height: 70px;
 }
 
 .back {
     transform: rotateY(180deg);
-    background-color: #E0DED7;
-    background-image: repeating-linear-gradient(0deg, #3B3A38, #3B3A38 33.3%, #ffffff00 0px, #ffffff00 67%);
-    background-size: 100%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (orientation:portrait) {

@@ -37,70 +37,101 @@ $(document).ready(function () {
     for (let i = 0; i < 4; i++) {
         put_banner_img[i].innerHTML += `<img src="./img/banner/banner${i + 1}.jpg" alt="">`;
     }
-    // class CardFlipOnScroll {
-    //     constructor(wrapper, sticky) {
-    //         this.wrapper = wrapper
-    //         this.sticky = sticky
-    //         this.cards = sticky.querySelectorAll('.card')
-    //         this.length = this.cards.length
 
-    //         this.start = 0
-    //         this.end = 0
-    //         this.step = 0
-    //     }
+    //card section
+    class CardFlipOnScroll {
+        constructor(wrapper, sticky) {
+            this.wrapper = wrapper
+            this.sticky = sticky
+            this.cards = sticky.querySelectorAll('.card')
+            this.length = this.cards.length
 
-    //     init() {
-    //         this.start = this.wrapper.offsetTop - 100
-    //         this.end = this.wrapper.offsetTop + this.wrapper.offsetHeight - innerHeight * 1.2
-    //         this.step = (this.end - this.start) / (this.length * 2)
-    //     }
+            this.start = 0
+            this.end = 0
+            this.step = 0
+        }
 
-    //     animate() {
-    //         this.cards.forEach((card, i) => {
-    //             const s = this.start + this.step * i
-    //             const e = s + this.step * (this.length + 1)
+        init() {
+            this.start = this.wrapper.offsetTop - 100
+            this.end = this.wrapper.offsetTop + this.wrapper.offsetHeight - innerHeight * 1.2
+            this.step = (this.end - this.start) / (this.length * 2)
+        }
 
-    //             if (scrollY <= s) {
-    //                 card.style.transform = `
-    //           perspective(100vw)
-    //           translateX(100vw) 
-    //           rotateY(180deg)
-    //         `
-    //             } else if (scrollY > s && scrollY <= e - this.step) {
-    //                 card.style.transform = `
-    //           perspective(100vw)
-    //           translateX(${100 + (scrollY - s) / (e - s) * -100}vw)
-    //           rotateY(180deg)
-    //         `
-    //             } else if (scrollY > e - this.step && scrollY <= e) {
-    //                 card.style.transform = `
-    //           perspective(100vw)
-    //           translateX(${100 + (scrollY - s) / (e - s) * -100}vw)
-    //           rotateY(${180 + -(scrollY - (e - this.step)) / this.step * 180}deg)
-    //         `
-    //             } else if (scrollY > e) {
-    //                 card.style.transform = `
-    //           perspective(100vw)
-    //           translateX(0vw) 
-    //           rotateY(0deg)
-    //         `
-    //             }
-    //         })
-    //     }
-    // }
+        animate() {
+            this.cards.forEach((card, i) => {
+                const s = this.start + this.step * i
+                const e = s + this.step * (this.length + 1)
 
-    // const mainContent1 = document.querySelector('.main-content-1')
-    // const sticky = document.querySelector('.sticky')
-    // const cardFlipOnScroll = new CardFlipOnScroll(mainContent1, sticky)
-    // cardFlipOnScroll.init()
+                if (scrollY <= s) {
+                    if (i % 2 == 1) {
+                        card.style.transform = `
+                                                perspective(100vw)
+                                                translateY(77vh) 
+                                                rotateY(180deg)
+                                                `
+                    }
+                    else {
+                        card.style.transform = `
+                                                perspective(100vw)
+                                                translateY(-77vh) 
+                                                rotateY(180deg)
+                                                `
+                    }
 
-    // window.addEventListener('scroll', () => {
-    //     cardFlipOnScroll.animate()
-    // })
+                } else if (scrollY > s && scrollY <= e - this.step) {
+                    if (i % 2 == 1) {
+                        card.style.transform = `
+                                perspective(100vw)
+                                translateY(${77 + (scrollY - s) / (e - s) * -77}vh)
+                                rotateY(180deg)
+                                `
+                    }
+                    else {
+                        card.style.transform = `
+                                perspective(100vw)
+                                translateY(-${77 + (scrollY - s) / (e - s) * -77}vh)
+                                rotateY(180deg)
+                                `
+                    }
+                } else if (scrollY > e - this.step && scrollY <= e) {
+                    if (i % 2 == 1) {
+                        card.style.transform = `
+                                perspective(100vw)
+                                translateY(${77 + (scrollY - s) / (e - s) * -77}vh)
+                                rotateY(${180 + -(scrollY - (e - this.step)) / this.step * 180}deg)
+                                `
+                    }
+                    else {
+                        card.style.transform = `
+                                perspective(100vw)
+                                translateY(-${77 + (scrollY - s) / (e - s) * -77}vh)
+                                rotateY(${180 + -(scrollY - (e - this.step)) / this.step * 180}deg)
+                                `
+                    }
 
-    // window.addEventListener('resize', () => {
-    //     cardFlipOnScroll.init()
-    // })
+                } else if (scrollY > e) {
+                    card.style.transform = `
+              perspective(100vw)
+              translateY(0vh) 
+              rotateY(0deg)
+            `
+                }
+            })
+        }
+    }
+
+    const card_section = document.querySelector('.card_section')
+    const sticky = document.querySelector('.sticky')
+    const cardFlipOnScroll = new CardFlipOnScroll(card_section, sticky)
+    cardFlipOnScroll.init()
+
+    window.addEventListener('scroll', () => {
+        cardFlipOnScroll.animate()
+    })
+
+    window.addEventListener('resize', () => {
+        cardFlipOnScroll.init()
+    })
 
 
 })
