@@ -111,10 +111,10 @@ $(document).ready(function () {
 
                 } else if (scrollY > e) {
                     card.style.transform = `
-              perspective(100vw)
-              translateY(0vh) 
-              rotateY(0deg)
-            `
+                                perspective(100vw)
+                                translateY(0vh) 
+                                rotateY(0deg)
+                                `
                 }
             })
         }
@@ -133,5 +133,7 @@ $(document).ready(function () {
         cardFlipOnScroll.init()
     })
 
+    console.log($(".photo").length)
+    for (let i = 0; i < $(".photo").length;) { }
 
 })

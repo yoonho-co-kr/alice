@@ -243,7 +243,7 @@ a.a_box {
     align-items: center;
     justify-content: space-between;
     transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
+    /* -webkit-transform-style: preserve-3d; */
 
 }
 
@@ -372,5 +372,42 @@ a.a_box {
     .card {
         width: 35vw;
         height: 45vw;
+    }
+}
+
+.photo_section {
+    background-color: #eb3a70;
+    padding: 200px 0;
+}
+
+.photo_box {
+    width: 100%;
+    max-width: 1490px;
+
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.photo {
+    width: calc((100% - 150px) / 5);
+    height: 25vw;
+    max-height: 350px;
+    background-color: #ffffff;
+    /* border: 1px solid black; */
+    border-radius: 1vw;
+    box-shadow: 6px 7px 26px -8px rgba(0, 0, 0, 0.75);
+    animation: photo_up 1s ease-in-out;
+}
+
+@keyframes photo_up {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0%);
     }
 }
