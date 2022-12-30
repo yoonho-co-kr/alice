@@ -1,0 +1,201 @@
+.game_section {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    /* padding: 150px 20px; */
+    align-items: center;
+}
+
+.symbols>div,
+.numbers>div,
+.cards_box>div {
+
+    /* border: 1px solid; */
+    border-radius: 8px;
+}
+
+.cardlist_section {
+    height: 570px;
+    box-sizing: border-box;
+}
+
+.numbers {
+    /* width: 100%;
+    max-width: 1600px; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 10px;
+
+}
+
+.numbers>div {
+    width: 50px;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 10px 30px 0;
+}
+
+.symbol_wrap {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.symbols {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.symbols>div {
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 30px 0;
+}
+
+.symbols>div>img {
+    width: 30px;
+}
+
+.cards_box {
+    width: 770px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards_box>div {
+    width: 50px;
+    height: 70px;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 13px -4px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 30px 0;
+}
+
+.cards_box>div:nth-child(13n) {
+    margin: 0 0px 30px 0;
+}
+
+.cards_box>div>img {
+    width: 30px;
+}
+
+.selected_section {
+    /* background-color: antiquewhite; */
+    /* width: 630px; */
+    /* height: 630px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    width: 750px;
+    height: 570px;
+    box-shadow: 6px 7px 26px -8px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.top_symbol>img,
+.bot_symbol>img {
+    width: 30px;
+
+}
+
+.top_symbol {
+    position: absolute;
+    top: 50px;
+    left: 15px
+}
+
+.bot_symbol {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    transform: rotate(180deg);
+}
+
+.top_number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.bot_number {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    transform: rotate(180deg);
+}
+
+.p_limit,
+.t_limit,
+.prize {
+    display: flex;
+    gap: 30px;
+    width: 500px;
+}
+
+.p_limit>div:nth-child(1),
+.t_limit>div:nth-child(1),
+.prize>div:nth-child(1) {
+    width: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.rules>div {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.rules>div:nth-child(2n) {
+    font-weight: 400;
+}
+
+.card_error {
+    font-size: 40px;
+    color: #E0001A;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.desc_wrap {
+    height: 400px;
+}
+
+.info_wrap {
+    padding: 0 40px;
+}

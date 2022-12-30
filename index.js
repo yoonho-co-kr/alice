@@ -1,21 +1,5 @@
 $(document).ready(function () {
 
-    $(window).scroll(function () {
-        let s_top = $(window).scrollTop();
-        let banner_s = $(".banner_section").offset().top;
-
-        if (s_top >= banner_s) {
-            $(".header_section").css({
-                opacity: "1"
-            })
-        }
-        else {
-            $(".header_section").css({
-                opacity: "0"
-            })
-        }
-    })
-
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
 
@@ -38,7 +22,7 @@ $(document).ready(function () {
         put_banner_img[i].innerHTML += `<img src="./img/banner/banner${i + 1}.jpg" alt="">`;
     }
 
-    //card section
+    // card section
     class CardFlipOnScroll {
         constructor(wrapper, sticky) {
             this.wrapper = wrapper
@@ -133,7 +117,43 @@ $(document).ready(function () {
         cardFlipOnScroll.init()
     })
 
-    console.log($(".photo").length)
-    for (let i = 0; i < $(".photo").length;) { }
+    // console.log($(".photo").length)
+    let count = 1;
+    $(window).scroll(function () {
+        let scroll_bottom = $(window).scrollTop() + $(window).height()
+        let footer_top = $('.footer_section').offset().top;
 
+        if (count < 4 && scroll_bottom >= footer_top) {
+            for (let i = 0; i < 5; i++) {
+                // $('.container').append(`<li class="item"></li>`)
+                $(`<div class="photo"><div class="clone"></div></div>`).appendTo('.photo_box')
+            }
+            count += 1;
+            // photo_click()
+        }
+    })
+
+    function index_chk() {
+        let url = location.href;
+        if (url.includes("index.html")) {
+            $(".menu div").eq(0).css({ color: "red" })
+        }
+    }
+    index_chk()
+    // photo_click()
+    // function photo_click() {
+    //     $(".photo").click(function () {
+
+    //     })
+    // }
+    $(".photo").mouseenter(function () {
+        $(this).children().css({
+            scale: "1.2"
+        })
+    })
+    $(".photo").mouseleave(function () {
+        $(".photo").children().css({
+            scale: "1"
+        })
+    })
 })

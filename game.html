@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./game.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header_section"></div>
+    <!-- <div class="spade_section">
+        <div class="info"></div>
+        <div class="card_slide"></div>
+    </div>
+    <div class="diamond_section"></div>
+    <div class="heart_section"></div>
+    <div class="club_section"></div> -->
+    <div class="game_section">
+        <div class="selected_section">
+            <div class="selected">
+                <div class="card_error">카드를 선택해주세요.</div>
+            </div>
+        </div>
+        <div class="cardlist_section">
+            <div class="numbers">
+                <div></div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>J</div>
+                <div>Q</div>
+                <div>K</div>
+            </div>
+            <div class="symbol_wrap">
+                <div class="symbols">
+                    <div><img src="./img/spade_s.png" alt=""></div>
+                    <div><img src="./img/diamond_s.png" alt=""></div>
+                    <div><img src="./img/heart_s.png" alt=""></div>
+                    <div><img src="./img/club_s.png" alt=""></div>
+
+                </div>
+                <div class="cards_box">
+                    <div class="card_option">1
+                        <img src="./img/spade_s.png" alt="">
+                    </div>
+                    <div class="card_option">2<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">3<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">4<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">5<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">6<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">7<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">8<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">9<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">10<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">J<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">Q<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">K<img src="./img/spade_s.png" alt=""></div>
+                    <div class="card_option">1<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">2<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">3<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">4<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">5<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">6<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">7<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">8<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">9<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">10<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">J<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">Q<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">K<img src="./img/diamond_s.png" alt=""></div>
+                    <div class="card_option">1<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">2<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">3<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">4<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">5<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">6<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">7<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">8<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">9<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">10<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">J<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">Q<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">K<img src="./img/heart_s.png" alt=""></div>
+                    <div class="card_option">1<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">2<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">3<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">4<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">5<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">6<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">7<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">8<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">9<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">10<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">J<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">Q<img src="./img/club_s.png" alt=""></div>
+                    <div class="card_option">K<img src="./img/club_s.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./header.js"></script>
+    <script src="./game.js"></script>
+    <script src="./card.js"></script>
+    <script src="./people.js"></script>
+</body>
+
+</html>
