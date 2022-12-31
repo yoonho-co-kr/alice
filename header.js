@@ -2,15 +2,17 @@ $(document).ready(function () {
 
     let make_header = `<a href="index.html" class="a_box">
             <div class="logo_box">
-                <img src="./img/spade_s.png" alt="spade_s"><img src="./img/diamond_s.png" alt="diamond_s"><img
-                    src="./img/heart_s.png" alt="heart_s"><img src="./img/club_s.png" alt="club_s">
+                <img src="./img/spade_w.png" alt="spade_w"><img src="./img/diamond_w.png" alt="diamond_w"><img
+                    src="./img/heart_w.png" alt="heart_w"><img src="./img/club_w.png" alt="club_w">
             </div>
         </a>
         <div class="menu_box">
+        <a href="./index.html">
             <div class="menu">
                 <div>소개</div>
                 <div>ABOUT</div>
             </div>
+            </a>
             <a href="./player.html">
                 <div class="menu">
                     <div>플레이어</div>

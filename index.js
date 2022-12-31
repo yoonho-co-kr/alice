@@ -136,8 +136,10 @@ $(document).ready(function () {
     function index_chk() {
         let url = location.href;
         if (url.includes("index.html")) {
-            $(".menu div").eq(0).css({ color: "red" })
+            // $(".menu div").eq(0).css({ transform: "translate(0, -40px)" })
+            $(".menu").eq(0).find("div").css({ transform: "translate(0, -40px)" })
         }
+        $()
     }
     index_chk()
     // photo_click()

@@ -1,7 +1,7 @@
 const card_list = [
     {
         card_number: '1',
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -12,7 +12,7 @@ const card_list = [
     },
     {
         card_number: '2',
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -23,7 +23,7 @@ const card_list = [
     },
     {
         card_number: '3',
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "없음",
         time_limit: "-",
         prize: "없음",
@@ -34,7 +34,7 @@ const card_list = [
     },
     {
         card_number: '4',
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -45,7 +45,7 @@ const card_list = [
     },
     {
         card_number: '5',
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "없음",
         time_limit: "20분",
         prize: "없음",
@@ -56,7 +56,7 @@ const card_list = [
     },
     {
         card_number: '6',
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "없음",
         time_limit: "-",
         prize: "없음",
@@ -67,7 +67,7 @@ const card_list = [
     },
     {
         card_number: '7',
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "없음",
         time_limit: "장소가 파괴될 때까지",
         prize: "없음",
@@ -78,7 +78,7 @@ const card_list = [
     },
     {
         card_number: '8',
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -89,7 +89,7 @@ const card_list = [
     },
     {
         card_number: '9',
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -100,7 +100,7 @@ const card_list = [
     },
     {
         card_number: "10",
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -111,7 +111,7 @@ const card_list = [
     },
     {
         card_number: "J",
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -122,7 +122,7 @@ const card_list = [
     },
     {
         card_number: "Q",
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "16",
         time_limit: "80분",
         prize: "-",
@@ -133,7 +133,7 @@ const card_list = [
     },
     {
         card_number: "K",
-        card_symbol: "spade_s",
+        card_symbol: "spade_y",
         player_limit: "없음",
         time_limit: "없음",
         prize: "없음",
@@ -145,7 +145,7 @@ const card_list = [
 
     {
         card_number: '1',
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -156,7 +156,7 @@ const card_list = [
     },
     {
         card_number: '2',
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -167,7 +167,7 @@ const card_list = [
     },
     {
         card_number: '3',
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -178,7 +178,7 @@ const card_list = [
     },
     {
         card_number: '4',
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "없음",
         time_limit: "물이 전선에 도달할 때까지",
         prize: "없음",
@@ -189,7 +189,7 @@ const card_list = [
     },
     {
         card_number: '5',
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -200,7 +200,7 @@ const card_list = [
     },
     {
         card_number: '6',
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "최대 5명",
         time_limit: "1시간",
         prize: "권총 잡지",
@@ -211,7 +211,7 @@ const card_list = [
     },
     {
         card_number: '7',
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -222,7 +222,7 @@ const card_list = [
     },
     {
         card_number: '8',
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -233,7 +233,7 @@ const card_list = [
     },
     {
         card_number: '9',
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -244,7 +244,7 @@ const card_list = [
     },
     {
         card_number: "10",
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -255,7 +255,7 @@ const card_list = [
     },
     {
         card_number: "J",
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "3명 필요",
         time_limit: "없음",
         prize: "-",
@@ -266,7 +266,7 @@ const card_list = [
     },
     {
         card_number: "Q",
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -277,7 +277,7 @@ const card_list = [
     },
     {
         card_number: "K",
-        card_symbol: "diamond_s",
+        card_symbol: "diamond_y",
         player_limit: "4",
         time_limit: "1분/라운드<br>5분 / 1라운드 & 새로운 규칙으로 라운드",
         prize: "없음",
@@ -288,7 +288,7 @@ const card_list = [
     },
     {
         card_number: '1',
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -299,7 +299,7 @@ const card_list = [
     },
     {
         card_number: '2',
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "열차당 1명",
         time_limit: "없음",
         prize: "없음",
@@ -310,7 +310,7 @@ const card_list = [
     },
     {
         card_number: '3',
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -321,7 +321,7 @@ const card_list = [
     },
     {
         card_number: '4',
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "최대 5명",
         time_limit: "질문당 1분",
         prize: "없음",
@@ -332,7 +332,7 @@ const card_list = [
     },
     {
         card_number: '5',
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -343,7 +343,7 @@ const card_list = [
     },
     {
         card_number: '6',
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -354,7 +354,7 @@ const card_list = [
     },
     {
         card_number: '7',
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "4명",
         time_limit: "10분",
         prize: "양고기",
@@ -365,7 +365,7 @@ const card_list = [
     },
     {
         card_number: '8',
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -376,7 +376,7 @@ const card_list = [
     },
     {
         card_number: '9',
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "-",
         time_limit: "6라운드/라운드마다 10분",
         prize: "-",
@@ -387,7 +387,7 @@ const card_list = [
     },
     {
         card_number: "10",
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "66(딜러 포함)",
         time_limit: "2시간",
         prize: "없음",
@@ -398,7 +398,7 @@ const card_list = [
     },
     {
         card_number: "J",
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "20(기술적으로 19)",
         time_limit: "1시간/라운드",
         prize: "없음",
@@ -409,7 +409,7 @@ const card_list = [
     },
     {
         card_number: "Q",
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "없음",
         time_limit: "없음",
         prize: "없음",
@@ -420,7 +420,7 @@ const card_list = [
     },
     {
         card_number: "K",
-        card_symbol: "heart_s",
+        card_symbol: "heart_y",
         player_limit: "-",
         time_limit: "-",
         prize: "없음",
@@ -431,7 +431,7 @@ const card_list = [
     },
     {
         card_number: '1',
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -442,7 +442,7 @@ const card_list = [
     },
     {
         card_number: '2',
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -453,7 +453,7 @@ const card_list = [
     },
     {
         card_number: '3',
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "없음",
         time_limit: "모든 등불이 꺼질 때까지",
         prize: "없음",
@@ -464,7 +464,7 @@ const card_list = [
     },
     {
         card_number: '4',
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "없음",
         time_limit: "50분",
         prize: "없음",
@@ -475,7 +475,7 @@ const card_list = [
     },
     {
         card_number: '5',
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -486,7 +486,7 @@ const card_list = [
     },
     {
         card_number: '6',
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -497,7 +497,7 @@ const card_list = [
     },
     {
         card_number: '7',
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -508,7 +508,7 @@ const card_list = [
     },
     {
         card_number: '8',
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -519,7 +519,7 @@ const card_list = [
     },
     {
         card_number: '9',
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -530,7 +530,7 @@ const card_list = [
     },
     {
         card_number: "10",
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "-",
         time_limit: "-",
         prize: "없음",
@@ -541,7 +541,7 @@ const card_list = [
     },
     {
         card_number: "J",
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "-",
         time_limit: "-",
         prize: "-",
@@ -552,7 +552,7 @@ const card_list = [
     },
     {
         card_number: "Q",
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "12",
         time_limit: "없음",
         prize: "없음",
@@ -563,7 +563,7 @@ const card_list = [
     },
     {
         card_number: "K",
-        card_symbol: "club_s",
+        card_symbol: "club_y",
         player_limit: "5명",
         time_limit: "2시간",
         prize: "없음",

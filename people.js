@@ -2,15 +2,15 @@ const player = [
     {
         job: "무직",
         chinese: "有栖 良平",
-        name: "Ryōhei Arisu(아리수)",
-        nickname1: "Arisu(아리수)",
+        name: "Ryōhei Arisu",
+        nickname1: "Arisu",
         img: "alice"
     },
     {
         job: "의류점원",
         chinese: "水鶏 光",
-        name: "Hikari Kuina(히카리 쿠이나)",
-        nickname1: "Kuina(쿠이나)",
+        name: "Hikari Kuina",
+        nickname1: "Kuina",
         img: "kuina"
     },
     {

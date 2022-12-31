@@ -38,6 +38,7 @@
     font-size: 30px;
     font-weight: 900;
     margin: 0 10px 30px 0;
+    color: black;
 }
 
 .symbol_wrap {
@@ -85,6 +86,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 10px 30px 0;
+    color: #ffffff;
 }
 
 .cards_box>div:nth-child(13n) {
@@ -92,7 +94,7 @@
 }
 
 .cards_box>div>img {
-    width: 30px;
+    width: 15px;
 }
 
 .selected_section {
@@ -118,6 +120,8 @@
     padding: 20px 30px;
     font-size: 12px;
     gap: 10px;
+    background: #154a41;
+    color: #ffffff
 }
 
 .top_symbol>img,
@@ -128,13 +132,13 @@
 
 .top_symbol {
     position: absolute;
-    top: 50px;
+    top: 55px;
     left: 15px
 }
 
 .bot_symbol {
     position: absolute;
-    bottom: 50px;
+    bottom: 55px;
     right: 15px;
     transform: rotate(180deg);
 }
@@ -147,6 +151,7 @@
     font-size: 30px;
     font-weight: 900;
     text-align: center;
+    color: #f1b24a;
 }
 
 .bot_number {
@@ -158,6 +163,7 @@
     font-size: 30px;
     font-weight: 900;
     transform: rotate(180deg);
+    color: #f1b24a;
 }
 
 .p_limit,
@@ -187,7 +193,7 @@
 
 .card_error {
     font-size: 40px;
-    color: #E0001A;
+    color: #f1b24a;
     font-weight: 700;
     margin: 0 auto;
 }

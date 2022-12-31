@@ -44,5 +44,13 @@ $(document).ready(function () {
         }
     })
 
-
+    function index_chk() {
+        let url = location.href;
+        if (url.includes("player.html")) {
+            // $(".menu div").eq(0).css({ transform: "translate(0, -40px)" })
+            $(".menu").eq(1).find("div").css({ transform: "translate(0, -40px)" })
+        }
+        $()
+    }
+    index_chk()
 })

@@ -44,6 +44,14 @@ $(document).ready(function () {
             })
         }
     })
-
+    function index_chk() {
+        let url = location.href;
+        if (url.includes("dealer.html")) {
+            // $(".menu div").eq(0).css({ transform: "translate(0, -40px)" })
+            $(".menu").eq(2).find("div").css({ transform: "translate(0, -40px)" })
+        }
+        $()
+    }
+    index_chk()
 
 })

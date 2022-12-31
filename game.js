@@ -1,5 +1,24 @@
 $(document).ready(function () {
-
+    let card_arr = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+    let put_picture = "spade_w"
+    for (let i = 0; i < card_arr.length * 4; i++) {
+        if (i <= 12) {
+            put_picture = "spade_w"
+        }
+        else if (i > 12 && i < 26) {
+            put_picture = "diamond_w"
+        }
+        else if (i >= 26 && i < 39) {
+            put_picture = "heart_w"
+        }
+        else if (i >= 39) {
+            put_picture = "club_w"
+        }
+        let make_card_options = `<div class="card_option">${card_arr[i % 13]}
+                        <img src="./img/${put_picture}.png" alt="">
+                    </div>`
+        $(".cards_box").append(make_card_options);
+    }
     $(".card_option").click(function () {
         // console.log($(this).index())
         $(".selected").empty()
@@ -52,29 +71,38 @@ $(document).ready(function () {
                             </div>`
             $(".selected").append(make_error);
         }
-        if ($(this).index() > 12 && $(this).index() < 39) {
-            $(".top_number").css({
-                color: "#E0001A"
-            })
-            $(".bot_number").css({
-                color: "#E0001A"
-            })
-        }
-        else {
-            $(".top_number").css({
-                color: "black"
-            })
-            $(".bot_number").css({
-                color: "black"
-            })
-        }
-        $(".card_option").css({
-            backgroundColor: "white"
-        })
-        $(this).css({
-            backgroundColor: "grey"
-        })
+        // if ($(this).index() > 12 && $(this).index() < 39) {
+        //     $(".top_number").css({
+        //         color: "#E0001A"
+        //     })
+        //     $(".bot_number").css({
+        //         color: "#E0001A"
+        //     })
+        // }
+        // else {
+        //     $(".top_number").css({
+        //         color: "black"
+        //     })
+        //     $(".bot_number").css({
+        //         color: "black"
+        //     })
+        // }
+        // $(".card_option").css({
+        //     backgroundColor: "white"
+        // })
+        // $(this).css({
+        //     backgroundColor: "grey"
+        // })
     })
+    function index_chk() {
+        let url = location.href;
+        if (url.includes("game.html")) {
+            // $(".menu div").eq(0).css({ transform: "translate(0, -40px)" })
+            $(".menu").eq(3).find("div").css({ transform: "translate(0, -40px)" })
+        }
+        $()
+    }
+    index_chk()
 
 
 })
