@@ -199,8 +199,8 @@
     transform-style: preserve-3d;
     position: relative;
     transition: transform 0.1s;
-    background-color: #3B3A38;
-    border-radius: 30px;
+    /* background-color: #3B3A38; */
+    border-radius: 1vw;
     box-shadow: 6px 7px 26px -8px rgba(0, 0, 0, 0.75);
 }
 
