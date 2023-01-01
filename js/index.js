@@ -4,6 +4,7 @@ $(document).ready(function () {
     for (let i = 0; i < sp.length; i++) {
         if (ua.match(sp[i])) {
             location.replace("./m.index.html");
+            // location.href("./m.index.html");
         }
     }
 
