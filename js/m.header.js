@@ -8,12 +8,6 @@ $(document).ready(function () {
     $(".logo_box").append(make_logo)
     let make_menu = `
                         
-                        <a href="./m.index.html">
-                            <div class="menu">
-                                <div>소개</div>
-                                <div>ABOUT</div>
-                            </div>
-                            </a>
                             <a href="./m.player.html">
                                 <div class="menu">
                                     <div>플레이어</div>

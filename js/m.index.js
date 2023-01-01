@@ -1,12 +1,4 @@
 $(document).ready(function () {
-    let ua = navigator.userAgent.toLowerCase();
-    let sp = ["android", "ipad", "iphone"];
-    for (let i = 0; i < sp.length; i++) {
-        if (ua.match(sp[i])) {
-            location.replace("./m.index.html");
-        }
-    }
-
     var swiper = new Swiper(".mySwiper", {
         direction: "vertical",
         pagination: {
