@@ -27,7 +27,7 @@
 
 
 .landing_section {
-    background: url(./img/background_fix.jpg) no-repeat center / cover;
+    background: url(../img/background_fix.jpg) no-repeat center / cover;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -35,10 +35,12 @@
     /* align-content: center; */
     justify-content: center;
     overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .landing_title {
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 900;
     text-align: center;
     color: #ffffff;
@@ -46,7 +48,7 @@
 }
 
 .landing_desc {
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 500;
     text-align: center;
     color: #ffffff;
@@ -96,7 +98,7 @@
 }
 
 .main_banner {
-    height: 800px;
+    height: 50vw;
     max-width: 1920px;
 }
 
@@ -140,6 +142,10 @@
     background-color: red;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+}
 
 
 .card_section {
@@ -151,39 +157,40 @@
     position: sticky;
     top: 0;
     max-width: 1600px;
-    height: 100vh;
+    height: calc(100vh - 60px);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     margin: 0 auto;
     gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    align-content: center;
 }
 
-.sticky-background {
+/* .sticky-background {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 10vw;
-}
+} */
 
-.card-frame {
+/* .card-frame {
     position: absolute;
     width: 95vw;
-    height: 30vw;
+    height: 60vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transform-style: preserve-3d;
-    /* -webkit-transform-style: preserve-3d; */
-
-}
+}  */
 
 .card {
-    width: 350px;
-    height: 490px;
+    width: calc((100% - 100px)/2);
+    height: 50vw;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -199,12 +206,12 @@
 
 
 .card {
-    transform: perspective(100vw) translateY(77vh) rotateY(180deg);
+    transform: perspective(100vw) translateX(100vw) rotateY(180deg);
 }
 
-.card:nth-child(2n) {
-    transform: perspective(100vw) translateY(-77vh) rotateY(180deg);
-}
+/* .card:nth-child(2n) {
+    transform: perspective(100vw) translateX(-100vw) rotateY(180deg);
+} */
 
 .card.front,
 .card.back {
@@ -250,8 +257,8 @@
 }
 
 .symbol_icon {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
 }
 
 .symbol_icon>img {
@@ -261,14 +268,14 @@
 
 .front {
     background-color: #FFF;
-    font-size: 0.5em;
+    font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -281,7 +288,7 @@
 }
 
 .symbol_desc {
-    height: 70px;
+    height: 40px;
 }
 
 .back {
@@ -292,7 +299,15 @@
     align-items: center;
 }
 
-@media screen and (orientation:portrait) {
+.title {
+    position: absolute;
+    top: 150px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #f1b24a;
+}
+
+/* @media screen and (orientation:portrait) {
     .card-frame {
         display: grid;
         height: initial;
@@ -304,14 +319,13 @@
     }
 
     .card {
-        width: 35vw;
+        width: 20vw;
         height: 45vw;
-    }
-}
+    } */
 
 .photo_section {
     /* background-color: #164a41; */
-    padding: 200px 0;
+    padding: 200px 20px;
 }
 
 .photo_box {
@@ -319,15 +333,15 @@
     max-width: 1490px;
 
     display: flex;
-    gap: 30px;
+    gap: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
 .photo {
-    width: calc((100% - 150px) / 5);
-    height: 25vw;
+    width: calc((100% - 20px) / 2);
+    height: 60vw;
     max-height: 350px;
     background-color: #ffffff;
     /* border: 1px solid black; */
@@ -355,10 +369,16 @@
     display: none;
 } */
 
-
+.p_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #f1b24a;
+    text-align: center;
+    margin-bottom: 80px;
+}
 
 .footer_section {
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-color: #222;
 }

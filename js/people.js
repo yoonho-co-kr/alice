@@ -96,7 +96,7 @@ const player = [
 
 const dealer = [
     {
-        job: "신경과학자 및 정신과 의사(구)",
+        job: "정신과 의사(구)",
         chinese: "加納 未来",
         name: "Mira Kanō",
         nickname1: "Mira",

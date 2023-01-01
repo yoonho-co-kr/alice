@@ -1,0 +1,279 @@
+.game_section {
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    padding: 200px 20px;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.symbols>div,
+.numbers>div,
+.cards_box>div {
+
+    /* border: 1px solid; */
+    border-radius: 8px;
+}
+
+.cardlist_section {
+    width: 100%;
+    /* height: 570px; */
+    box-sizing: border-box;
+    margin-top: 50px;
+    display: none;
+}
+
+.numbers {
+    /* width: 100%;
+    max-width: 1600px; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 10px;
+
+}
+
+.numbers>div {
+    width: 50px;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 10px 30px 0;
+    color: black;
+}
+
+.symbol_wrap {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.symbols {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.symbols>div {
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 30px 0;
+}
+
+.symbols>div>img {
+    width: 30px;
+}
+
+.cards_box {
+    width: 770px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards_box>div {
+    width: 50px;
+    height: 70px;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 13px -4px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 30px 0;
+    color: #ffffff;
+}
+
+.cards_box>div:nth-child(13n) {
+    margin: 0 0px 30px 0;
+}
+
+.cards_box>div>img {
+    width: 15px;
+}
+
+.selected_section {
+    /* background-color: antiquewhite; */
+    width: 100%;
+    /* height: 630px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* padding-top: 100px; */
+    /* padding-top: 50px; */
+    /* box-sizing: border-box; */
+}
+
+.selected {
+    width: 100%;
+    height: 570px;
+    box-shadow: 6px 7px 26px -8px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    /* top: 100px; */
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    font-size: 10px;
+    gap: 10px;
+    background: #154a41;
+    color: #ffffff
+}
+
+.top_symbol>img,
+.bot_symbol>img {
+    width: 30px;
+
+}
+
+.top_symbol {
+    position: absolute;
+    top: 55px;
+    left: 15px
+}
+
+.bot_symbol {
+    position: absolute;
+    bottom: 55px;
+    right: 15px;
+    transform: rotate(180deg);
+}
+
+.top_number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: #f1b24a;
+}
+
+.bot_number {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    transform: rotate(180deg);
+    color: #f1b24a;
+}
+
+.p_limit,
+.t_limit,
+.prize {
+    display: flex;
+    gap: 30px;
+    /* width: 500px; */
+}
+
+.p_limit>div:nth-child(1),
+.t_limit>div:nth-child(1),
+.prize>div:nth-child(1) {
+    width: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.rules>div {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.rules>div:nth-child(2n) {
+    font-weight: 400;
+}
+
+.card_error {
+    font-size: 20px;
+    color: #f1b24a;
+    font-weight: 700;
+    margin: auto auto;
+}
+
+.desc_wrap {
+    height: 600px;
+    padding-top: 5px;
+}
+
+.info_wrap {
+    padding: 0 40px;
+}
+
+.summary {
+    margin-bottom: 10px;
+}
+
+
+.card_select {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 100px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#start {
+    width: 150px;
+    height: 50px;
+    background-color: #f1b24a;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+select {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: calc((100% - 20px)/2);
+    height: 3em;
+    padding: 0 4em 0 1em;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em,
+        linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* <option> colors */
+option {
+    color: inherit;
+    background-color: #f1b24a;
+}
+
+/* Remove focus outline */
+:focus {
+    outline: none;
+}
+
+/* Remove IE arrow */
+::-ms-expand {
+    display: none;
+}

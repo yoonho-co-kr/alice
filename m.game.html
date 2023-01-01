@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/m.game.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/m.header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header_section">
+        <a href="m.index.html" class="a_box">
+            <div class="logo_box"></div>
+        </a>
+    </div>
+    <div class="menu_box"></div>
+    <div class="game_section">
+        <div class="card_select">
+            <select name="shape" id="shapes">
+                <option value="spade">SPADES</option>
+                <option value="diamond">DIAMONDS</option>
+                <option value="heart">HEARTS</option>
+                <option value="club">CLUBS</option>
+            </select>
+            <select name="number" id="numbers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">J</option>
+                <option value="12">Q</option>
+                <option value="13">K</option>
+            </select>
+
+            <button id="start">카드 확인</button>
+        </div>
+        <div class="selected_section">
+            <div class="selected">
+                <div class="card_error">카드를 선택해주세요.</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./js/m.header.js"></script>
+    <script src="./js/m.game.js"></script>
+    <script src="./js/card.js"></script>
+    <script src="./js/people.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+/* html, body {
+  background-color: #FBF8F1;
+  font-family: 'Titan One', cursive;
+  color: #2f2f2f;
+} */
+
+/* .start-screen, .end-screen {
+  width: 100%;
+  height: 100vh;
+  background-color: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(12px, 9vw, 60px);
+  color: #f1f1f1;
+  text-align: center;
+  line-height: 1.2;
+} */
+
+/* .start-screen > h1 {
+  animation: bounce 0.5s ease-out alternate-reverse infinite;
+} */
+
+/* @keyframes bounce {
+  100% { transform: translateY(-20%); }
+} */
+
+
+.landing_section {
+    background: url(../img/background_fix.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    overflow: hidden;
+}
+
+.landing_title {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    color: #ffffff;
+    animation: landing_t 1s linear;
+}
+
+.landing_desc {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    animation: landing_d 1s linear;
+}
+
+
+
+
+
+@keyframes landing_t {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes landing_d {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.banner_section {
+    padding-top: 150px;
+    position: relative;
+}
+
+*/ .banner>img {
+    height: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.main_banner {
+    height: 800px;
+    max-width: 1920px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+}
+
+.swiper-pagination-bullet {
+    background: #222 url(./img/tick.png) no-repeat center
+}
+
+.swiper-pagination-bullet-active {
+    background-color: red;
+}
+
+
+
+.card_section {
+    width: 100%;
+    height: 500vh;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    max-width: 1600px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.sticky-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
+}
+
+.card-frame {
+    position: absolute;
+    width: 95vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+    /* -webkit-transform-style: preserve-3d; */
+
+}
+
+.card {
+    width: 350px;
+    height: 490px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 0.1s;
+    background-color: #3B3A38;
+    border-radius: 30px;
+    box-shadow: 6px 7px 26px -8px rgba(0, 0, 0, 0.75);
+}
+
+
+.card {
+    transform: perspective(100vw) translateY(77vh) rotateY(180deg);
+}
+
+.card:nth-child(2n) {
+    transform: perspective(100vw) translateY(-77vh) rotateY(180deg);
+}
+
+.card.front,
+.card.back {
+    width: 100%;
+    height: 100%;
+}
+
+.back>img {
+    width: 90%;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.top_symbol,
+.bot_symbol {
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+}
+
+.top_symbol {
+    top: 15px;
+    left: 15px;
+}
+
+.bot_symbol {
+    bottom: 15px;
+    right: 15px;
+    transform: translateY(180deg);
+}
+
+.top_symbol>img,
+.bot_symbol>img {
+    width: 100%;
+}
+
+.symbol_icon {
+    width: 70px;
+    height: 70px;
+}
+
+.symbol_icon>img {
+    width: 100%;
+}
+
+
+.front {
+    background-color: #FFF;
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.symbol_name {
+    font-weight: 900;
+}
+
+.symbol_name:nth-child(2n) {
+    font-weight: 500;
+}
+
+.symbol_desc {
+    height: 70px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (orientation:portrait) {
+    .card-frame {
+        display: grid;
+        height: initial;
+        width: initial;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13vw;
+        justify-items: center;
+    }
+
+    .card {
+        width: 35vw;
+        height: 45vw;
+    }
+}
+
+.photo_section {
+    /* background-color: #164a41; */
+    padding: 200px 0;
+}
+
+.photo_box {
+    width: 100%;
+    max-width: 1490px;
+
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.photo {
+    width: calc((100% - 150px) / 5);
+    height: 25vw;
+    max-height: 350px;
+    background-color: #ffffff;
+    /* border: 1px solid black; */
+    border-radius: 1vw;
+    box-shadow: 6px 7px 26px -8px rgba(0, 0, 0, 0.75);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.photo>img {
+    height: 100%;
+    transition: all 1s;
+}
+
+/* .clone {
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    background-color: #ffffff;
+    border-radius: 1vw;
+    box-shadow: 6px 7px 26px -8px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    display: none;
+} */
+
+
+
+.footer_section {
+    width: 100%;
+    height: 300px;
+    background-color: #222;
+}
