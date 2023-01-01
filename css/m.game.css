@@ -1,9 +1,9 @@
 .game_section {
     width: 100%;
     display: flex;
-    height: calc(100vh - 60px);
+    /* height: calc(100vh - 60px); */
     justify-content: center;
-    padding: 200px 20px;
+    padding: 250px 20px 100px;
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
@@ -228,7 +228,8 @@
     width: 100%;
     display: flex;
     gap: 20px;
-    padding: 250px 0 0 0;
+    /* padding: 250px 0 0 0; */
+
     flex-wrap: wrap;
     justify-content: center;
 }
