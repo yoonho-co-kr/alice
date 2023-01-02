@@ -33,8 +33,8 @@ $(document).ready(function () {
             </a>
         </div>
         <div class="account_box">
-            <div id="login">로그인</div>
-            <div id="join">회원가입</div>
+            <a href="./login.html"><div id="login">로그인</div></a>
+            <a href="./join.html"><div id="join">회원가입</div></a>
         </div>`
     $(".header_section").append(make_header)
 

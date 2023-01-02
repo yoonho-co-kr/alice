@@ -78,6 +78,7 @@ a.a_box {
 #login {
     width: 100px;
     text-align: right;
+    padding: 0 20px;
 }
 
 .menu>div:nth-child(2) {
@@ -88,6 +89,7 @@ a.a_box {
 #join {
     width: 110px;
     color: #f1b24a;
+    padding: 0 20px;
 }
 
 .account_box {
@@ -146,6 +148,7 @@ a.a_box {
     animation: menubtn_move linear 1s infinite;
 }
 
+
 @keyframes menubtn_move {
     0% {
         transform: translate(-50%, 0);
@@ -157,5 +160,53 @@ a.a_box {
 
     100% {
         transform: translate(-50%, 0);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .menu_box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* justify-content: center; */
+        align-items: center;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        padding-top: 20px;
+        background-color: #164a41;
+        transform: translateY(-100%);
+        z-index: 99999;
+        transition: all 0.5s;
+        box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .menu {
+        height: 30px;
+        overflow: hidden;
+        display: flex;
+    }
+
+
+    .menu>div {
+        line-height: 30px;
+        padding: 0 20px;
+        transition: 0.5s;
+        font-weight: 500;
+        /* display: flex; */
+        /* align-items: center; */
+    }
+
+    .account_box {
+        /* width: 130px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* font-weight: 500; */
+        color: #f1b24a;
+        /* gap: 20px; */
+        margin-top: 0px;
     }
 }

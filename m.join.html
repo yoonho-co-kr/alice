@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALICE IN BORDERLAND</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/m.join.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/m.header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -20,22 +20,32 @@
 
 <body>
     <div class="header_section">
+        <a href="./m.index.html" class="a_box">
+            <div class="logo_box"></div>
+        </a>
     </div>
+    <div class="menu_box"></div>
     <div class="login_section">
         <div class="login_box">
             <div class="t_l"><img src="./img/spade_w.png" alt=""></div>
             <div class="t_r"><img src="./img/diamond_w.png" alt=""></div>
             <div class="b_l"><img src="./img/heart_w.png" alt=""></div>
             <div class="b_r"><img src="./img/club_w.png" alt=""></div>
-            <div class="title">로그인</div>
+            <div class="title">회원가입</div>
             <div class="input_box">
                 <div class="greet">WELCOME TO BORDERLAND</div>
 
-                <input type="text" placeholder="아이디를 입력하세요" id="id">
-                <!-- <div class="error_msg"></div> -->
-                <input type="password" placeholder="비밀번호를 입력하세요" id="pw">
-                <!-- <div class="error_msg"></div> -->
-                <button id="login_btn">로그인</button>
+                <!-- <form action=""> -->
+                <input type="text" placeholder="아이디는 5자리 ~ 15자리" id="id">
+                <div class="error_msg"></div>
+                <input type="password" placeholder="비밀번호는 최소 8자리 이상" id="pw">
+                <div class="error_msg"></div>
+                <input type="password" placeholder="비밀번호는 최소 8자리 이상" id="pw_chk">
+                <div class="error_msg"></div>
+                <input type="email" placeholder="이메일을 입력해주세요" id="email">
+                <div class="error_msg"></div>
+                <button id="join_btn">회원가입</button>
+                <!-- </form> -->
             </div>
 
 
@@ -44,8 +54,8 @@
 
 
 
-    <script src="./js/header.js"></script>
-    <script src="./js/login.js"></script>
+    <script src="./js/m.header.js"></script>
+    <script src="./js/m.join.js"></script>
 </body>
 
 </html>

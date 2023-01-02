@@ -27,8 +27,8 @@ $(document).ready(function () {
                                 </div>
                             </a>
                             <div class="account_box">
-                            <div id="login">로그인</div>
-                            <div id="join">회원가입</div>
+                            <a href="./m.login.html"><div id="login">로그인</div></a>
+                            <a href="./m.join.html"><div id="join">회원가입</div></a>
                             </div>
                             <div class="menu_btn_box"><div class="menu_btn"><div class="arrow"><img src="./img/down-arrow.png" alt="down_arrow"></div></div></div>
                             `
