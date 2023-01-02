@@ -15,7 +15,7 @@ $(document).ready(function () {
             put_picture = "club_w"
         }
         let make_card_options = `<div class="card_option">${card_arr[i % 13]}
-                        <img src="./img/${put_picture}.png" alt="">
+                        <img src="./img/${put_picture}.png" alt="${put_picture}">
                     </div>`
         $(".cards_box").append(make_card_options);
     }
@@ -23,7 +23,7 @@ $(document).ready(function () {
         // console.log($(this).index())
         $(".selected").empty()
         let put_selected = ` <div class="top_symbol">
-                    <img src="./img/${card_list[$(this).index()].card_symbol}.png" alt="">
+                    <img src="./img/${card_list[$(this).index()].card_symbol}.png" alt="${card_list[$(this).index()].card_symbol}">
                 </div>
                 <div class="top_number">${card_list[$(this).index()].card_number}</div>
                 <div class="info_wrap">
@@ -54,20 +54,20 @@ $(document).ready(function () {
                 </div>
                 <div class="bot_number">${card_list[$(this).index()].card_number}</div>
                 <div class="bot_symbol">
-                    <img src="./img/${card_list[$(this).index()].card_symbol}.png" alt="">
+                    <img src="./img/${card_list[$(this).index()].card_symbol}.png" alt="${card_list[$(this).index()].card_symbol}">
                 </div>`
         if (card_list[$(this).index()].rule != "-") {
             $(".selected").append(put_selected);
         }
         else {
             let make_error = `<div class="top_symbol">
-                                <img src="./img/${card_list[$(this).index()].card_symbol}.png" alt="">
+                                <img src="./img/${card_list[$(this).index()].card_symbol}.png" alt="{card_list[$(this).index()].card_symbol}">
                             </div>
                             <div class="top_number">${card_list[$(this).index()].card_number}</div>
                             <div class="card_error">해당 카드에 대한 정보가 없습니다.</div>
                             <div class="bot_number">${card_list[$(this).index()].card_number}</div>
                             <div class="bot_symbol">
-                                <img src="./img/${card_list[$(this).index()].card_symbol}.png" alt="">
+                                <img src="./img/${card_list[$(this).index()].card_symbol}.png" alt="{card_list[$(this).index()].card_symbol}">
                             </div>`
             $(".selected").append(make_error);
         }

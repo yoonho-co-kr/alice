@@ -133,7 +133,7 @@ const dealer = [
         name: "Isao Shīrabi",
         nickname1: "Shīrabi",
         nickname2: "King of Spades",
-        img: "shirabi"
+        img: "shirabi2"
     },
     {
         job: "-",
