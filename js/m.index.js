@@ -25,7 +25,7 @@ $(document).ready(function () {
         }
 
         init() {
-            this.start = this.wrapper.offsetTop - 100
+            this.start = this.wrapper.offsetTop - 400
             this.end = this.wrapper.offsetTop + this.wrapper.offsetHeight - innerHeight * 1.2
             this.step = (this.end - this.start) / (this.length * 2)
         }
@@ -77,16 +77,19 @@ $(document).ready(function () {
         cardFlipOnScroll.init()
     })
 
-    // console.log($(".photo").length)
+    for (let i = 0; i < 12; i++) {
+        let put_photo = `<img src="./img/photo/photo${i + 1}.png" alt="photo${i + 1}"></img>`
+        $(".photo").eq(i).append(put_photo);
+    }
     let count = 1;
     $(window).scroll(function () {
         let scroll_bottom = $(window).scrollTop() + $(window).height()
         let footer_top = $('.footer_section').offset().top;
 
         if (count < 4 && scroll_bottom >= footer_top) {
-            for (let i = 0; i < 2; i++) {
+            for (let i = 0; i < 3; i++) {
                 // $('.container').append(`<li class="item"></li>`)
-                $(`<div class="photo"><div class="clone"></div></div>`).appendTo('.photo_box')
+                $(`<div class="photo"><img src = "./img/photo/photo${(count * 3) + i + 1}.png" alt = "photo${(count * 3) + i + 1}" ></div>`).appendTo('.photo_box')
             }
             count += 1;
             // photo_click()

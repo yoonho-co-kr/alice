@@ -124,7 +124,10 @@ $(document).ready(function () {
     window.addEventListener('resize', () => {
         cardFlipOnScroll.init()
     })
-
+    for (let i = 0; i < 12; i++) {
+        let put_photo = `<img src="./img/photo/photo${i + 1}.png" alt="photo${i + 1}"></img>`
+        $(".photo").eq(i).append(put_photo);
+    }
     // console.log($(".photo").length)
     let count = 1;
     $(window).scroll(function () {
@@ -132,12 +135,22 @@ $(document).ready(function () {
         let footer_top = $('.footer_section').offset().top;
 
         if (count < 4 && scroll_bottom >= footer_top) {
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 3; i++) {
                 // $('.container').append(`<li class="item"></li>`)
-                $(`<div class="photo"><div class="clone"></div></div>`).appendTo('.photo_box')
+                $(`<div class="photo"><img src = "./img/photo/photo${(count * 3) + i + 1}.png" alt = "photo${(count * 3) + i + 1}" ></div></div>`).appendTo('.photo_box')
             }
             count += 1;
             // photo_click()
+            $(".photo").mouseenter(function () {
+                $(this).children().css({
+                    scale: "1.2"
+                })
+            })
+            $(".photo").mouseleave(function () {
+                $(".photo").children().css({
+                    scale: "1"
+                })
+            })
         }
     })
 
