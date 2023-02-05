@@ -1,14 +1,7 @@
 $(document).ready(function () {
-    let ua = navigator.userAgent.toLowerCase();
-    let sp = ["android", "ipad", "iphone"];
-    for (let i = 0; i < sp.length; i++) {
-        if (ua.match(sp[i])) {
-            location.replace("./m.index.html");
-            // location.href("./m.index.html");
-        }
-    }
 
-    var swiper = new Swiper(".mySwiper", {
+
+    var swiper = new Swiper(".swipper-container", {
         spaceBetween: 30,
 
         centeredSlides: true,
@@ -29,7 +22,9 @@ $(document).ready(function () {
     for (let i = 0; i < 4; i++) {
         put_banner_img[i].innerHTML += `<img src="./img/banner/banner${i + 1}.jpg" alt="">`;
     }
-
+    $(".swiper-slide").click(function () {
+        $(location).attr("href", "game.html")
+    })
     // card section
     class CardFlipOnScroll {
         constructor(wrapper, sticky) {
@@ -44,7 +39,7 @@ $(document).ready(function () {
         }
 
         init() {
-            this.start = this.wrapper.offsetTop - 100
+            this.start = this.wrapper.offsetTop - 1000
             this.end = this.wrapper.offsetTop + this.wrapper.offsetHeight - innerHeight * 1.2
             this.step = (this.end - this.start) / (this.length * 2)
         }

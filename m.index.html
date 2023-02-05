@@ -17,7 +17,16 @@
     <link rel="stylesheet" href="./css/swiper.css">
     <script src="./js/m.header.js"></script>
     <link rel="icon" type="image/png" href="./img/alice_favicon.png" />
-
+    <!-- <script>
+        let ua = navigator.userAgent.toLowerCase();
+        let sp = ["android", "ipad", "iphone"];
+        for (let i = 0; i < sp.length; i++) {
+            if (ua.match(sp[i])) {
+                location.replace("./index.html");
+                // location.href("./m.index.html");
+            }
+        }
+    </script> -->
 </head>
 
 <body>
@@ -39,7 +48,7 @@
     </div>
     <div class="banner_section">
         <div class="main_banner swiper mySwiper">
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper swipper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"></div>
                     <div class="swiper-slide"></div>

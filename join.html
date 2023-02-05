@@ -17,6 +17,16 @@
     <link rel="icon" type="image/png" href="./img/alice_favicon.png" />
 
 </head>
+<script>
+    let ua = navigator.userAgent.toLowerCase();
+    let sp = ["android", "ipad", "iphone"];
+    for (let i = 0; i < sp.length; i++) {
+        if (ua.match(sp[i])) {
+            location.replace("./m.index.html");
+            // location.href("./m.index.html");
+        }
+    }
+</script>
 
 <body>
     <div class="header_section">

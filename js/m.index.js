@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".swipper-container", {
         direction: "vertical",
         pagination: {
             el: ".swiper-pagination",
@@ -25,7 +25,7 @@ $(document).ready(function () {
         }
 
         init() {
-            this.start = this.wrapper.offsetTop - 400
+            this.start = this.wrapper.offsetTop - 1000
             this.end = this.wrapper.offsetTop + this.wrapper.offsetHeight - innerHeight * 1.2
             this.step = (this.end - this.start) / (this.length * 2)
         }
